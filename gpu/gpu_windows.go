@@ -55,3 +55,8 @@ func GetCPUMem() (memInfo, error) {
 	}
 	return memInfo{TotalMemory: memStatus.TotalPhys, FreeMemory: memStatus.AvailPhys, FreeSwap: memStatus.AvailPageFile}, nil
 }
+
+func FindLibCapLibs() []string {
+	return []string{"<unused>"}
+}
+
